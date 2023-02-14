@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Введите число");
 
-string answer = Console.ReadLine();
+string? answer = Console.ReadLine();
 int n = Convert.ToInt32(answer);
 
 if (n == 1)Console.WriteLine("Monday");
