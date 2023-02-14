@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите первое число");
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдает, 
+// какое число большее, а какое меньшее.
+Console.WriteLine("Введите первое число");
 string? answer = Console.ReadLine();
 int na = Convert.ToInt32(answer);
 

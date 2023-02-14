@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите первое число");
+﻿// Задача 4: Напишите программу, которая принимает на вход
+// три числа и выдает максимальное из этих чисел.
+Console.WriteLine("Введите первое число");
 string? answer = Console.ReadLine();
 int na = Convert.ToInt32(answer);
 
