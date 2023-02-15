@@ -20,6 +20,7 @@ if (na>nb)
     Console.WriteLine (na);
    
 }
+else 
 
 if (nc>na)
 {
@@ -27,6 +28,7 @@ if (nc>na)
     Console.WriteLine (nc);
   
 }
+else
 
 if (nb>nc)
 {
