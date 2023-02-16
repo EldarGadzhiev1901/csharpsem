@@ -14,7 +14,7 @@ Console.WriteLine("Введите третье число");
 string? answer3 = Console.ReadLine();
 int nc = Convert.ToInt32(answer3);
 
-if (na>nb)
+if (nc < na && na > nb)
 {
     Console.Write("max = ");
     Console.WriteLine (na);
@@ -22,7 +22,7 @@ if (na>nb)
 }
 else 
 
-if (nc>na)
+if (nc>na && nb<nc)
 {
         Console.Write("max = ");
     Console.WriteLine (nc);
