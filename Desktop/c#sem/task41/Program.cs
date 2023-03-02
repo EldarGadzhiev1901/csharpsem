@@ -1,25 +1,32 @@
-﻿int count = 0;
-int n;
-string stop = "stop";
-Console.WriteLine("введите число"); 
-
-    while (true) 
-    { 
+﻿  Console.WriteLine("Введите длинну массива");
+  int m = Convert.ToInt32(Console.ReadLine());
+ 
+  int count = 0;
+  int i = 0;
+ int[] array = new int[m];
   
-    var data = Console.ReadLine();
-    if (String.Equals(data, stop)) 
+
+    while (i<array.Length)
     {
-      break;
-    }
-     
-
-    
-  
-    
-    if (int.TryParse(data, out n))
+       Console.WriteLine("введите число");
+    int n = Convert.ToInt32(Console.ReadLine());
+    array[i] = n;
+    i++;
+    if (n>0)
     {
       count++;
     }
-    else Console.WriteLine("Неправильное стоп-слово");
-    } 
-  Console.WriteLine(count);
+    }
+  Console.WriteLine(string.Join(" ", array));
+  
+  Console.WriteLine($"Количество чисел, больше нуля = {count}");
+   
+
+
+// int answer = CountOfNumbers();
+// Console.WriteLine(answer);
+// int number = ReadNumber("Введите число");
+// int[] myArray = CountOfNumbers(number);
+// Console.WriteLine(string.Join(" ", myArray));
+// ReverseArray(myArray);
+// Console.WriteLine(string.Join(" ", myArray));

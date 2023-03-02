@@ -7,7 +7,7 @@ Console.WriteLine("введите число");
     { 
   
     var data = Console.ReadLine();
-    if (String.Equals(data, stop)) 
+    if (String.Equals(data, stop, StringComparison.CurrentCultureIgnoreCase)) 
     {
       break;
     }
