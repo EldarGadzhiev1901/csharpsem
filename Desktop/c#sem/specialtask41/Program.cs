@@ -18,7 +18,11 @@ Console.WriteLine("введите число");
     
     if (int.TryParse(data, out n))
     {
-      count++;
+      if (Convert.ToInt32(data) > 0)
+      {
+        count++;
+      }
+      
     }
     else Console.WriteLine("Неправильное стоп-слово");
     } 
