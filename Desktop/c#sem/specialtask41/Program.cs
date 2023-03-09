@@ -18,7 +18,7 @@ while (true)
 
     if (int.TryParse(data, out n))
     {
-        if (Convert.ToInt32(data) > 0)
+        if (n > 0)
         {
             count++;
         }
