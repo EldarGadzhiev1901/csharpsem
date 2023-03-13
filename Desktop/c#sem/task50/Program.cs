@@ -30,7 +30,7 @@ void DigitCheck(int[,] matrix, int i, int j)
 
  
  
-    if (i<= matrix.Length && j<=matrix.Length && i>=0 && j>=0)
+    if (i< matrix.GetLength(0) && j<matrix.GetLength(1))
                
                 Console.Write(matrix[i , j]);
                

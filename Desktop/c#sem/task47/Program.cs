@@ -24,6 +24,7 @@ double[,] GetRandomMatrix(int rows, int columns)
 
     }
     return matrix;
+  
 }
 
 
@@ -34,7 +35,8 @@ void PrintMatrix(double[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write( matrix[i, j] + " " );
+            
+            Console.Write( $"{matrix[i, j]:f2}" + " | "  );
             
         }
         Console.WriteLine();
